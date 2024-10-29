@@ -1,0 +1,237 @@
+body {
+	background: #ffffff;
+	display: -webkit-box;
+	/* Safari */
+	display: -ms-flexbox;
+	/* IE10 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.task__block {
+	max-width: 500px;
+	width: 100%;
+	min-width: 320px;
+	background-color: #df1616;
+	padding: 5px 15px 30px 15px;
+	border-radius: 17px;
+	margin-top: 5%;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 750px) {
+	.task__block {
+		height: 100%;
+		margin-top: 0;
+	}
+}
+
+.task__block-header {
+	text-align: center;
+}
+
+.task__block-header h2 {
+	font-family: "Dancing Script", cursive;
+	color: #fff;
+}
+
+.task__block-field {
+	padding: 8px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	display: -webkit-box;
+	/* Safari */
+	display: -ms-flexbox;
+	/* IE10 */
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+@media (max-width: 460px) {
+	.task__block-field {
+		margin-top: 10px;
+		flex-wrap: wrap;
+	}
+}
+
+.task__block-input {
+	/* min-width: 320px; */
+	height: 50px;
+	border: none;
+	width: 100%;
+	font-size: 24px;
+}
+
+.task__block-input:focus {
+	outline: none;
+}
+
+.task__block-add {
+	cursor: pointer;
+	width: 55px;
+	height: 50px;
+	background-color: #02f72b;
+	border: none;
+	border-radius: 10%;
+	color: #fff;
+	font-weight: 700;
+	-webkit-transition: all 0.3s ease 0s;
+	/* Добавлено для кроссбраузерности */
+	transition: all 0.3s ease 0s;
+}
+
+.task__block-add:hover {
+	background-color: #0f7c21;
+}
+
+.task__block-add:active {
+	background-color: #0c5e19;
+}
+
+@media (max-width: 460px) {
+	.task__block-add {
+		width: 100%;
+		height: 50px;
+		margin-top: 10px;
+		border-radius: 5px;
+	}
+}
+
+.tasks__block-list-h3 {
+	color: #fff;
+	font-size: 23px;
+}
+
+.tasks__block {
+	margin-top: 15px;
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 1px 5px 1px 5px;
+}
+
+.tasksList {
+	padding: 0;
+	width: 100%;
+	display: -webkit-box;
+	/* Safari */
+	display: -ms-flexbox;
+	/* IE10 */
+	display: flex;
+	-webkit-box-orient: vertical;
+	/* Safari */
+	-webkit-box-direction: normal;
+	/* Safari */
+	-ms-flex-direction: column;
+	/* IE10 */
+	flex-direction: column;
+	gap: 15px;
+	list-style-type: none;
+}
+
+.task-item {
+	position: relative;
+	overflow: hidden;
+	display: -webkit-box;
+	/* Safari */
+	display: -ms-flexbox;
+	/* IE10 */
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+	border: 1px solid #0f0f0f2c;
+	border-radius: 5px;
+}
+
+@media (max-width: 460px) {
+	.task-item {
+		display: block;
+		text-align: center;
+	}
+}
+
+.task__p {
+	display: block;
+	font-size: 24px;
+	width: 70%;
+	margin-left: 15px;
+	font-weight: 700;
+	font-family: "Agdasima", sans-serif;
+	letter-spacing: 2px;
+	word-wrap: break-word;
+	outline: none;
+}
+
+@media (max-width: 460px) {
+	.task__p {
+		width: 100%;
+		margin-left: 5px;
+	}
+}
+
+.edit__input {
+	display: block;
+	font-size: 24px;
+	width: 90%;
+	margin-left: 15px;
+	font-weight: 700;
+	font-family: "Agdasima", sans-serif;
+	letter-spacing: 2px;
+	word-wrap: break-word;
+	outline: none;
+}
+
+.fa-file-pen {
+	font-size: 24px;
+	font-weight: 600;
+	color: #968f86;
+}
+
+.fa-trash-can {
+	font-size: 24px;
+	font-weight: 600;
+	color: #f80303;
+}
+
+/* ================================== */
+/* bnt1 */
+.block__menu-btn1 {
+	cursor: pointer;
+	padding: 15px 14px;
+	border-radius: 50%;
+	border: none;
+	-webkit-transition: all 0.3s ease 0s;
+	/* Для Safari и старых версий браузеров */
+	transition: all 0.3s ease 0s;
+	border: 1px solid #ffffff;
+}
+
+.block__menu-btn1:hover {
+	background-color: #ece1e1;
+	border: 1px solid #968f86;
+}
+
+/* btn1:active */
+.block__menu-btn1.active {
+	display: block;
+	top: -75px;
+	left: 0px;
+}
+
+/* ============================================ */
+.block__menu-btn4 {
+	cursor: pointer;
+	padding: 15px 16px;
+	border-radius: 50%;
+	border: none;
+	-webkit-transition: all 0.9s ease 0s;
+	/* Для Safari и старых версий браузеров */
+	transition: all 0.9s ease 0s;
+	border: 1px solid #ffffff;
+}
+
+.block__menu-btn4:hover {
+	background-color: #ece1e1;
+	border: 1px solid #f80303;
+}

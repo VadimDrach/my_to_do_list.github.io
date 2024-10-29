@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap" rel="stylesheet">
+	<title>My To-Do List</title>
+</head>
+
+<body>
+
+	<div class="task__block">
+		<header class="task__block-header">
+			<h2>- My To-do List -</h2>
+		</header>
+		<div class="task__block-field">
+			<input type="text" class="task__block-input" id="taskInput" placeholder="Enter a task...">
+			<button type="button" class="task__block-add" id="addTaskBtn">Add</button>
+		</div>
+
+		<h3 class="tasks__block-list-h3">Active Tasks:</h3>
+
+		<section class="tasks__block">
+			<ul class="tasksList" id="tasksList">
+			</ul>
+		</section>
+	</div>
+
+	<script src="js/script.js"></script>
+	<script src="https://kit.fontawesome.com/b6bd6cac30.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+
+
